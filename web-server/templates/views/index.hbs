@@ -2,16 +2,22 @@
 <html lang="en">
 
 <head>
-    {{>header}}
+
     <title>Index</title>
 </head>
 
-<body class="text-center">
-    {{>navbar}}
-    <h1>{{title}}</h1>
-    <p>{{name}}</p>
+<body class="text-center container">
+    {{>header}}
+    <form>
+        <input class="form-control" placeholder="location" />
+        <button type="submit">Search</button>
+    </form>
 
-    {{>footer}}
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+    <p></p>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
